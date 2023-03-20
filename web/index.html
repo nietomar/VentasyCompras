@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+            <h1>Registrar Cliente</h1>
+        <form action="SvCliente" method="post">
+            <label>Nombre: </label>
+            <input type="text" name="nombre" minlength="2" maxlength="30"  pattern="^[a-zA-Z]+$" required>
+            <br>
+            <label>Telefono: </label>
+            <input type="text" name="telefono" maxlength="10" pattern="[0-9]{10}" required>
+            <br>
+            <label>Correo: </label>
+            <input type="text" name="correo" minlength="3" required>
+            <br>
+            <input type="submit" value="Registar Cliente">
+        </form>
+
+
+           <h1>Registrar Producto</h1>
+        <form action="SvProducto2 " method="post">
+            <label>Nombre del producto: </label>
+            <input type="text" name="nombre" minlength="2" maxlength="30"  pattern="^[a-zA-Z]+$" required>
+            <br>
+            <label>Precio del producto: </label>
+            <input type="text" name="precio" minlength="1" maxlength="6" pattern="^[0-9]+$" required>
+            <br>
+            <label>Existencia del producto: </label>
+            <input type="text" name="existencia" minlength="1" maxlength="3" pattern="^[0-9]+$" required>
+            <br>
+            <input type="submit" value="Registrar Producto">
+        </form>
+
+
+            <h1>Comprar Producto</h1>
+        <form action="SvComprar " method="post">
+            <label>Nombre del producto: </label>
+            <input type="text" name="nomproductos" minlength="2" maxlength="30"  pattern="^[a-zA-Z]+$" required>
+            <br>
+            <label>Numero de productos: </label>
+            <input type="text" name="nproductos" minlength="1" maxlength="3" pattern="^[0-9]+$" required>
+            <br>
+            <input type="submit" value="Comprar" >
+       </form>
+
+
+            <h1>Vender</h1>
+        <form action="SvVender" method="post">
+            <label>Nombre del producto:</label>
+            <input type="text" name="nombre" minlength="2" maxlength="30"  pattern="^[a-zA-Z]+$" required>
+            <br>
+            <label>Numero de productos:</label>
+            <input type="text" name="existencia" minlength="1" maxlength="3" pattern="^[0-9]+$" required>
+            <br>
+            <input type="submit" value="Vender">
+        </form>
+        
+    </body>
+</html>
